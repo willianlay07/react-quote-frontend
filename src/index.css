@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .textStyle {
+    @apply font-sans text-sm text-gray-900;
+  }
+
+  .mbTextStyle {
+    @apply font-sans text-sm text-white;
+  }
+
+  .quoteBlock {
+    @apply overflow-y-auto overflow-x-auto h-min w-full ring-1 ring-slate-300 shadow-xl rounded-lg p-3 text-sm text-gray-900;
+  }
+
+  .formbox {
+    @apply w-[90%] mx-auto bg-white px-6 py-6 rounded-lg shadow-xl ring-1 ring-slate-800/5 flex flex-col;
+  }
+
+  .textAreaStyle {
+    @apply w-full ring-1 ring-slate-900 rounded-sm h-20 px-3 py-2 focus:outline-none text-sm text-gray-800;
+  }
+
+  .inputStyle {
+    @apply w-full ring-1 ring-slate-900 rounded-sm h-10 px-3 py-2 focus:outline-none text-sm text-gray-800;
+  }
+}
